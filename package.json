@@ -1,0 +1,23 @@
+{
+  "name": "Cypress-Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-cfg": "cypress open --config pageLoadTimeout=30000,baseUrl=https://www.reddit.com/",
+    "test": "cypress open",
+    "test-custCfg": "cypress open --config-file ./custCypress.json",
+    "test-run": "cypress run"
+  },
+  "keywords": [],
+  "author": "QA BOX LET'S TEST",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "5.4.0",
+    "cypress-file-upload": "^4.1.1",
+    "cypress-xpath": "^1.6.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.4.0"
+  }
+}
