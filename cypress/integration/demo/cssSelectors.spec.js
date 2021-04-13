@@ -1,3 +1,4 @@
+
 describe('Tool QA', () => {
     it('Validate test box', () => {
         cy.visit('/text-box')

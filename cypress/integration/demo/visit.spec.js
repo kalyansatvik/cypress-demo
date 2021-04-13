@@ -1,17 +1,20 @@
 //describe
 //it
-describe('main block',()=>{
-    it.skip('Validate landing page',()=>{
-        cy.visit('/')
+import depfile from '../demo/depFile'
+const depFile = new depfile()
+describe('main block', () => {
+    it.only('Validate landing page', () => {
+        cy.visit('http://the-internet.herokuapp.com/')
         cy.contains('Welcome to the-internet').should('be.visible')
+        depFile.printDep()
     })
 
-    it.skip('Validate drag and drop page',()=>{
+    it.skip('Validate drag and drop page', () => {
         cy.visit('/drag_and_drop')
         cy.contains('Welcome to the-internet').should('be.visible')
     })
 
-    it('Validate landing page',()=>{
+    it('Validate landing page', () => {
         cy.visit('/')
         cy.contains('Welcome to the-internet').should('be.visible')
         cy.contains('Drag and Drop').click()
