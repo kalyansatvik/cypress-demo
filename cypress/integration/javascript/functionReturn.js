@@ -1,14 +1,21 @@
 //return - returns the value
-// function square(n){
-//     return n*n;
+// function square(n) {
+//     return n * n;
 // }
-// console.log(square(2))
+// console.log(square(4))
+
+// let squareNum = square(4)
+// let sum = squareNum + 10
+// console.log(sum)
+
+//void - return
 
 //return stops the execution
 // function square(n) {
 //     return n * n;
 //     console.log('after return')
 // }
+
 // console.log(square(2))
 
 //break and return are same
@@ -41,7 +48,8 @@
 //         }
 
 //     } finally {
-//         return 'finally block executed after return'
+//         //return 'finally block executed after return'
+//         console.log('finally block executed after return in console')
 //     }
 // }
 
